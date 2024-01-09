@@ -9,7 +9,7 @@ const { Resend } = require('resend');
 
 app.use(express.static(path.resolve(__dirname, "dist"), {
     setHeaders: function (res, path, stat) {
-        res.setHeader("Cache-Control", "no-cache");
+        res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
     }
 }))
 app.use(express.json()) // for reading body data
