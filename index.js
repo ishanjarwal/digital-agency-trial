@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
-const { formvalidate } = require('./validator');
+const formvalidate = require('./validator');
 const cors = require('cors');
 const { validationResult } = require('express-validator');
 const { Resend } = require('resend');
